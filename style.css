@@ -1,0 +1,105 @@
+/* Background */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* safer than height:100vh for small screens */
+    padding: 20px;
+}
+
+/* Main Card Container */
+.container {
+    background: white;
+    width: 100%;
+    max-width: 420px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    box-sizing: border-box; /* ensures padding is included in width */
+}
+
+/* Headings */
+h1 {
+    margin-bottom: 10px;
+}
+
+h2, h3, h4 {
+    margin: 10px 0;
+}
+
+/* Buttons General */
+button {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+button:hover {
+    opacity: 0.9;
+    transform: scale(1.02);
+}
+
+/* Start Button */
+.start-btn {
+    background: #2a5298;
+    color: white;
+}
+
+/* Level Buttons */
+.easy { 
+    background: #28a745; 
+    color: white; 
+}
+
+.medium { 
+    background: #ffc107; 
+    color: black; 
+}
+
+.hard { 
+    background: #dc3545; 
+    color: white; 
+}
+
+/* Answer Highlighting */
+.correct { 
+    background: #28a745 !important; 
+    color: white; 
+}
+
+.wrong { 
+    background: #dc3545 !important; 
+    color: white; 
+}
+
+/* Next Button */
+#nextBtn {
+    background: #444;
+    color: white;
+}
+
+/* Result Text */
+#result {
+    font-weight: bold;
+    margin-top: 15px;
+    text-align: center;
+    word-wrap: break-word;  /* ensures long text wraps inside container */
+}
+
+/* Final Score */
+#finalScore {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    word-wrap: break-word;  /* wrap long text */
+    text-align: center;
+}

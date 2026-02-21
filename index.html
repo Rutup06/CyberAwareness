@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CyberAware Quiz</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- INTRO PAGE -->
+    <div id="intro">
+        <h1>🛡 CyberAware</h1>
+        <p>Test your cybersecurity knowledge across different levels.</p>
+        <button class="start-btn" onclick="showLevels()">Start Quiz</button>
+    </div>
+
+    <!-- LEVEL SELECTION -->
+    <div id="levels" style="display:none;">
+        <h2>Select Difficulty Level</h2>
+        <button class="easy" onclick="startQuiz('easy')">Easy</button>
+        <button class="medium" onclick="startQuiz('medium')">Medium</button>
+        <button class="hard" onclick="startQuiz('hard')">Hard</button>
+    </div>
+
+    <!-- QUIZ -->
+    <div id="quiz" style="display:none;">
+        <h3 id="levelTitle"></h3>
+        <h4 id="questionNumber"></h4>
+        <h3 id="question"></h3>
+
+        <div class="options">
+            <button id="opt0" onclick="checkAnswer(0)"></button>
+            <button id="opt1" onclick="checkAnswer(1)"></button>
+            <button id="opt2" onclick="checkAnswer(2)"></button>
+        </div>
+
+        <p id="result"></p>
+        <button id="nextBtn" onclick="nextQuestion()" disabled>Next</button>
+    </div>
+
+    <!-- Final Score -->
+    <h2 id="finalScore"></h2>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
